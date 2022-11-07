@@ -21,7 +21,7 @@ int main()
 {
     //check balance,deposit,withdraw,show menu
     int option;
-    double balance=500;
+    double balance=5000;
 
     do{
     showMenu();
