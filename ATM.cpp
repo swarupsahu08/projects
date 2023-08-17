@@ -3,12 +3,12 @@ using namespace std;
 
 void showMenu()
 {
-    cout<<"**********MENU**********"<<endl;
+    cout<<"*******MENU********"<<endl;
     cout<<"1.Check Balance"<<endl;
     cout<<"2.Deposit"<<endl;
     cout<<"3.Withdraw"<<endl;
     cout<<"4.Exit"<<endl;
-    cout<<"************************"<<endl;
+    cout<<"*******************"<<endl;
 
 }
 
@@ -31,15 +31,18 @@ int main()
 
     switch(option)
     {
+        // It will show the balance
         case 1:
         cout<<"Balance is: "<<balance<<"$"<<endl;
         break;
+        // It will be used to deposit money
         case 2:
         cout<<"Deposit amount: ";
         double depositAmount;
         cin>>depositAmount;
         balance+=depositAmount;
         break;
+        //It will be used to withdraw money from ATM
         case 3:
         cout<<"Withdraw amount: ";
         double withdrawAmount;
